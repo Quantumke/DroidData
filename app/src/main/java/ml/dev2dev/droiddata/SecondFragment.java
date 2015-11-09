@@ -17,7 +17,10 @@ public class SecondFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.register, container,
                 false);
+
+
         return rootView;
+
     }
 
 }
