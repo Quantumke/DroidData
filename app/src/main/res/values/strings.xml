@@ -9,7 +9,10 @@
     <string name="firstname">First Name</string>
     <string name="lastname">Last Name</string>
     <string name="email">example@domain.com</string>
+    <string name="password">Password</string>
     <string name="submit">SUBMIT</string>
     <string name="hint10">This will be your email adress</string>
     <string name="hint11">Please enter a password between 8 and 25 characters containing Uppercase and Lowercase characters and numbers</string>
+    <string name="loginhint">PLEASE FILL IN THE FOLLOWING INFORMATION</string>
+    <string name="title_activity_resources">Resources</string>
 </resources>
