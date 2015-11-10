@@ -19,14 +19,14 @@ public class Myintro extends AppIntro {
 
     @Override
     public void init(Bundle savedInstanceState) {
-        addSlide(AppIntroFragment.newInstance("Droid Data", "Droid data is a data visualization tool that transforms quantitative" +
-                        "data to maps",
-                R.drawable.splash,
-                Color.parseColor("#7CA34C")));
+        addSlide(AppIntroFragment.newInstance("COMBAT DATA", "VISUALIZE YOUR DATA",
+                R.drawable.del,
+
+                Color.parseColor("#545E22")));
 
 
-        setBarColor(Color.parseColor("#9BCC5F"));
-        setSeparatorColor(Color.parseColor("#9BCC5F"));
+        setBarColor(Color.parseColor("#000000"));
+        setSeparatorColor(Color.parseColor("#000000"));
         showSkipButton(false);
 
 //        setVibrate(true);
@@ -49,7 +49,7 @@ public class Myintro extends AppIntro {
 //        Toast.makeText(getApplicationContext(),"You Done",Toast.LENGTH_SHORT).show();
 
 
-        Intent a =  new Intent(Myintro.this, Auth.class);
+        Intent a =  new Intent(Myintro.this, Login.class);
         startActivity(a);
         finish();
 

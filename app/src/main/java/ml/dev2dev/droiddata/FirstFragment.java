@@ -24,8 +24,8 @@ public class FirstFragment extends Fragment implements View.OnClickListener {
                 false);
 
 
-    Button login = (Button ) rootView.findViewById(R.id.login);
-        login.setOnClickListener(this);
+//    Button login = (Button ) rootView.findViewById(R.id.lo);
+//        login.setOnClickListener(this);
         return rootView;
     }
 

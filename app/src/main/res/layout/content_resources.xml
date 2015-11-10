@@ -26,7 +26,7 @@
                 android:id="@+id/img_content"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/wall"
+                android:background="@drawable/metal"
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
                 app:layout_collapseMode="parallax" />
@@ -68,20 +68,39 @@
                     android:paddingTop="24dp">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="225dp"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:gravity="center"
-                        android:text="One"
+                        android:text="Population Vs Food"
                         android:textAppearance="@style/TextAppearance.AppCompat.Title"
                         android:textIsSelectable="false"
-                        android:textSize="25sp" />
+                        android:textSize="25sp"
+                        android:layout_marginLeft="100dp" />
+
+                    <com.github.siyamed.shapeimageview.CircularImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/imageView3"
+                        android:src="@drawable/secret"
+                        android:layout_marginTop="-30dp" />
+
+
+
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="one"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:text="Visualizes population of kibera Nairobi Kenya againist available food in stores in metric tonnes"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Graph"
+                        android:id="@+id/textView6"
+                        android:layout_gravity="right" />
 
                 </LinearLayout>
 
@@ -92,15 +111,5 @@
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:clickable="true"
-        android:src="@drawable/ic_done_white_24px"
-        app:layout_anchor="@+id/appbarLayout"
-        app:layout_anchorGravity="bottom|right|end" />
 
 </android.support.design.widget.CoordinatorLayout>

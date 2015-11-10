@@ -27,7 +27,7 @@ public class Resources extends AppCompatActivity {
 
 
         collapsingToolbar = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
-        collapsingToolbar.setTitle("AndroidSources");
+        collapsingToolbar.setTitle("RANDOM DATA SETS");
         fab=(FloatingActionButton)findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

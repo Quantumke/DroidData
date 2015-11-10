@@ -1,75 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="50dp"
+    android:textSize="30sp"
+    android:textColor="#D1555D"
+    android:textStyle="bold"/>
+
+<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FAFAF8">
+    android:layout_height="wrap_content"
+    android:id="@+id/edit_text_container"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:padding="10dp">
 
-    <TextView
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/email_loginlayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/loginhint"
-        android:id="@+id/textView2"
-        android:layout_marginTop="100dp" />
+        android:layout_height="wrap_content">
 
-    <EditText
+        <EditText
+            android:id="@+id/email_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="#504C49" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/password_loginlayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:hint="@string/email"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:textColor="#C3C1BF" />
+        android:layout_height="wrap_content">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:hint="@string/password"
-        android:id="@+id/pass"
-        android:layout_marginTop="20dp"
-        android:textColor="#C3C1BF" />
+        <EditText
+            android:id="@+id/password_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="#504C49" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/submit"
-        android:id="@+id/login"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:background="#504C49"
-        android:textColor="#C3C1BF" />
 
-    <!--<com.github.clans.fab.FloatingActionButton-->
-        <!--android:id="@+id/fab"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="bottom|right"-->
-        <!--android:layout_marginBottom="8dp"-->
-        <!--android:layout_marginRight="8dp"-->
-        <!--android:src="@drawable/ic_navigate_next_white_24dp"-->
-        <!--app:fab_colorNormal="#B07D4A"-->
-        <!--app:fab_colorPressed="#B07D4A"-->
-        <!--app:fab_colorRipple="#99FFFFFF"-->
-        <!--app:fab_showShadow="true"-->
-        <!--app:fab_shadowColor="#B07D4A"-->
-        <!--app:fab_shadowRadius="4dp"-->
-        <!--app:fab_shadowXOffset="1dp"-->
-        <!--app:fab_shadowYOffset="3dp"-->
-        <!--app:fab_size="normal"-->
-        <!--app:fab_showAnimation="@anim/fab_scale_up"-->
-        <!--app:fab_hideAnimation="@anim/fab_scale_down"-->
-        <!--app:fab_label=""-->
-        <!--app:fab_progress_color="#B07D4A"-->
-        <!--app:fab_progress_backgroundColor="#B07D4A"-->
-        <!--app:fab_progress_indeterminate="false"-->
-        <!--app:fab_progress_max="100"-->
-        <!--app:fab_progress="0"-->
-        <!--app:fab_progress_showBackground="true"-->
-        <!--android:layout_marginTop="10dp" />-->
+    </android.support.design.widget.TextInputLayout>
 
+</LinearLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Sign In"
+    android:textSize="18sp"
+    android:id="@+id/signin_button"
+    android:background="#504C49"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:textColor="#ffffff"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SIGN UP"
+    android:textSize="18sp"
+    android:id="@+id/registerhere_button"
+    android:background="#504C49"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:textColor="#ffffff"/>
 
 
 </LinearLayout>
