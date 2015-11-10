@@ -33,11 +33,28 @@
         </activity>
 
         <activity
+<<<<<<< HEAD
 
             android:name=".Resources"
             android:label="@string/title_activity_resources"
             android:theme="@style/AppTheme.NoActionBar" >
 
+=======
+            android:name=".DataSetActivity"
+            android:label="@string/title_activity_data_set"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme.Detail" >
+        </activity>
+        <activity
+            android:name=".DisasterActivity"
+            android:label="@string/title_activity_chart"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DataSetActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="DataSetActivity" />
+>>>>>>> 8911cdc2437b3a484bd710bb757a3d1dbf2da200
         </activity>
     </application>
 

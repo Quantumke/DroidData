@@ -6,6 +6,7 @@
     <string name="title_activity_auth"></string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_register">Register</string>
+    <string name="title_activity_chart">Charts</string>
     <string name="firstname">First Name</string>
     <string name="lastname">Last Name</string>
     <string name="email">example@domain.com</string>
@@ -41,7 +42,6 @@
     <string name="newhere">Not a Brother? Sign Up</string>
     <string name="lap">I Need some clearance information soldier</string>
     <string name="brother">Already a brother? Sign In</string>
-
 
 
 </resources>

@@ -1,5 +1,6 @@
 package ml.dev2dev.droiddata;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -14,16 +15,13 @@ import android.support.v7.graphics.Palette;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
-import android.widget.Toast;
-
-/*import com.suleiman.material.adapter.SimpleRecyclerAdapter;
-import com.suleiman.material.model.VersionModel;*/
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class DataSetActivity extends AppCompatActivity {
+    public static final String DISASTER = "ml.dev2dev.droidapp.disaster";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,8 +44,6 @@ public class DataSetActivity extends AppCompatActivity {
                 (CollapsingToolbarLayout) findViewById(R.id.htab_collapse_toolbar);
         collapsingToolbarLayout.setTitleEnabled(false);
 
-        ImageView header = (ImageView) findViewById(R.id.htab_header);
-
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
                 R.drawable.header);
 
@@ -63,42 +59,6 @@ public class DataSetActivity extends AppCompatActivity {
             }
         });
 
-        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-
-                viewPager.setCurrentItem(tab.getPosition());
-
-                switch (tab.getPosition()) {
-                    case 0:
-                        showToast("One");
-                        break;
-                    case 1:
-                        showToast("Two");
-
-                        break;
-                    case 2:
-                        showToast("Three");
-
-                        break;
-                }
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
-    }
-
-
-    void showToast(String msg) {
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 
     private void setupViewPager(ViewPager viewPager) {
@@ -129,6 +89,24 @@ public class DataSetActivity extends AppCompatActivity {
                 return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void showThunderstormChart(View view){
+        Intent intent = new Intent(this, DisasterActivity.class);
+        intent.putExtra(DISASTER, Disaster.THUNDERSTORM.name());
+        startActivity(intent);
+    }
+
+    public void showFloodChart(View view){
+        Intent intent = new Intent(this, DisasterActivity.class);
+        intent.putExtra(DISASTER, Disaster.FLOOD.name());
+        startActivity(intent);
+    }
+
+    public void showLandslideChart(View view){
+        Intent intent = new Intent(this, DisasterActivity.class);
+        intent.putExtra(DISASTER, Disaster.LANDSLIDE.name());
+        startActivity(intent);
     }
 
     static class ViewPagerAdapter extends FragmentPagerAdapter {
